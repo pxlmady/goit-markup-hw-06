@@ -21,10 +21,11 @@ img {
 }
 
 .container {
-    max-width: 1158px ;
-    padding-left: 15px ;
-    padding-right: 15px ;
-    margin: 0 auto;
+    max-width: 320px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container-header {
@@ -280,11 +281,12 @@ img {
 
 .advantages-ul { 
     display: flex;
-    gap: 24px;
+    gap: 72px;
+    flex-wrap: wrap;
 }
 
 .advantages-li {
-    width: calc((100% - 72px) / 4);
+    width: 100%;
 }
 
 .our-team {
@@ -531,12 +533,11 @@ margin-right: 80px;
         align-items: center;
         justify-content: center;
         height: 112px;
-    
         margin-bottom: 8px;
-    
         border: 1px solid #434455;
         background-color: #f4f4fd;
         border-radius: 4px;
+        display: none;
 }
 
 .advantages {
@@ -769,12 +770,6 @@ p {
     margin-right: 4px;
 }
 
-/* .checkbox-input:checked+.checkbox-span {
-    background-color: #404bbf;
-    border: none;
-    fill: #f4f4fd;
-} */
-
 .checkbox-input:checked + .checkbox-label > .checkbox-span {
     background-color: #404bbf;
     border: none;
@@ -818,8 +813,22 @@ p {
     background-color: #404bbf;
 }
 
-.container-form.is-open {
+/* .container-form.is-open {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
+} */
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
