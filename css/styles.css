@@ -145,7 +145,7 @@ img {
         to bottom,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
-    url(../images/people-office.jpg);
+    url(../images/people-office-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -153,6 +153,18 @@ img {
     max-width: 1440px;
     margin: 0 auto;
 }
+
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .main-section {
+            background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+    url(../images/people-office-mob-2x.jpg);
+        }
+    }
 
 .main-title {
     font-family: "Roboto", sans-serif;
@@ -999,6 +1011,23 @@ p {
 
     .main-section {
         padding: 112px 0;
+        background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+    url(../images/people-office-tab.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .main-section {
+            background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+    url(../images/people-office-tab-2x.jpg);
+        }
     }
 
     .our-porfolio-ul {
@@ -1084,6 +1113,10 @@ p {
     .mob-menu {
         display: none;
     }
+
+    .checkbox-label {
+        align-items: baseline;
+    }
 }
 
 @media screen and (min-width: 1158px) {
@@ -1093,6 +1126,26 @@ p {
         padding-right: 15px;
     }
     
+    .main-section {
+        background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+        url(../images/people-office.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .main-section {
+            background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+    url(../images/people-office-2x.jpg);
+        }
+    }
+
     .advantages-subtitle {
         font-weight: 500;
         font-size: 20px;
