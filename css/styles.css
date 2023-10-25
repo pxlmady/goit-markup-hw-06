@@ -1040,7 +1040,6 @@ p {
     .footer-items-links-container {
         flex-direction: row;
         justify-content: start;
-        padding-left: ;
         gap: 24px;
     }
 
@@ -1058,7 +1057,6 @@ p {
 
     .footer-form-container {
         display: block;
-        padding-left: ;
     }
 
     .mob-menu-button {
@@ -1243,5 +1241,9 @@ p {
     .address-tel a {
         font-size: 16px;
         line-height: 1.5;
+    }
+
+    .main-section {
+        padding: 188px 0;
     }
 }
