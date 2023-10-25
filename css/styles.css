@@ -105,7 +105,7 @@ img {
     border: none;
     height: 24px;
     padding: 0;
-    margin-left: 150px;
+    margin-left: auto;
 }
 
 .nav-links {
@@ -132,7 +132,6 @@ img {
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-    padding-left: 332px;
 }
 
 .address-item {
@@ -809,7 +808,6 @@ p {
     color:#8e8f99;
     display: flex;
     align-items: center;
-    gap: 5px;
 }
 
 .checkbox-span {
@@ -822,7 +820,8 @@ p {
     align-items: center;
     justify-content: center;
     fill: transparent;
-    margin-right: 4px;
+    margin-right: 8px;
+    flex-shrink: 0;
 }
 
 .checkbox-input:checked + .checkbox-label .checkbox-span {
@@ -832,7 +831,7 @@ p {
 }
 
 
-.chechbox-link {
+.checkbox-link {
     color:#4d5ae5; 
     text-decoration-line: underline;
 }
@@ -987,7 +986,7 @@ p {
         width: calc((100% - 24px) / 2);
     }
     .advantages-ul {
-        gap: 24px;
+        gap: 72px 24px;
     }
 
     .our-team-li-cadr {
@@ -1041,7 +1040,7 @@ p {
     .footer-items-links-container {
         flex-direction: row;
         justify-content: start;
-        padding-left: 108px;
+        padding-left: ;
         gap: 24px;
     }
 
@@ -1059,7 +1058,7 @@ p {
 
     .footer-form-container {
         display: block;
-        padding-left: 108px;
+        padding-left: ;
     }
 
     .mob-menu-button {
@@ -1075,18 +1074,18 @@ p {
     }
 
     .main-section {
-        padding: 188px 0;
+        padding: 112px 0;
     }
 
     .address {
         display: flex;
+        margin-left: auto;
     }
 
     .address-ul {
         display: flex;
         flex-direction: column;
         gap: 12px;
-        padding-left: 120px;
     }
 
     .address-mail a,
@@ -1114,9 +1113,18 @@ p {
         display: none;
     }
 
+    .text-checkbox {
+        display: flex;
+    }
+
     .checkbox-label {
         align-items: baseline;
     }
+
+    .container-footer {
+        width: 564px;
+    }
+
 }
 
 @media screen and (min-width: 1158px) {
@@ -1198,6 +1206,7 @@ p {
         display: flex;
         flex-direction: row;
         gap: 0;
+        width: 1158px;
     }
 
     .footer-form-container {
@@ -1226,7 +1235,6 @@ p {
     }
 
     .address-ul {
-        padding-left: 332px;
         flex-direction: row;
         gap: 40px;
     }
